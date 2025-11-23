@@ -1,16 +1,15 @@
 import React from 'react'
-import Home from './Pages/Home'
-import Products from './Pages/Products'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import { Route, Routes } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import ContactForm from './components/ContactForm'
-import Info from './components/Info'
-import Layout from './components/Layout/Layout'
-import NotFound from './components/NotFound'
-import JobsScond from './Pages/JobsScond'
-import SinglePage from './Pages/SinglePage'
+import Home from './Pages/Home';
+import Products from './Pages/Products';
+import About from './Pages/About';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar.jsx';
+import ContactForm from './components/ContactForm';
+import Info from './components/Info';
+import Layout from './components/Layout/Layout';
+import NotFound from './components/NotFound';
+import JobsScond from './Pages/JobsScond';
+import SinglePage from './Pages/SinglePage';
 
 const App = () => {
   return (
