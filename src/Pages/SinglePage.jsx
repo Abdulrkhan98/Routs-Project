@@ -33,36 +33,34 @@ const SinglePage = () => {
 
   return (
     <>
-      <div className='flex flex-col ml-90 justify-center h-60'>
-        <h1 className='text-4xl font-bold'>Job Opening</h1>
-        <h3>List of the Current job opening in our company</h3>
-      </div>
+      <div className="flex flex-col items-center text-center px-4 py-10">
+     <div>
+    <h1 className="text-4xl font-bold">Job Opening</h1>
+    <h3>List of the Current job opening in our company</h3>
+     </div>
+    </div>
+  <div className="max-w-3xl mx-auto px-4">
+  <h2 className="text-xl">
+    <span className="text-2xl font-bold">Job Title: </span>
+    {apidata.title}
+    </h2>
+    <h2 className="mt-5 text-xl">
+    <span className="text-2xl font-bold">Salary: </span>
+    {apidata.salary}
+    </h2>
+    <h2 className="text-xl mt-5">
+    <span className="text-2xl font-bold">Job Location: </span>
+    {apidata.location}
+    </h2>
+    <h2 className="text-xl mt-5">
+    <span className="text-2xl font-bold">Description: </span>
+    {apidata.description}
+     </h2>
+     <button className="px-6 py-3 bg-black text-white mt-9 rounded-lg hover:bg-gray-800 transition">
+    Apply Now
+     </button>
+   </div>
 
-      <div className='ml-90'>
-        <h2 className='text-xl'>
-          <span className='text-2xl font-bold'>Job Title: </span>
-          {apidata.title}
-        </h2>
-
-        <h2 className='mt-5 text-xl'>
-          <span className='text-2xl font-bold'>Salary: </span>
-          {apidata.salary}
-        </h2>
-
-        <h2 className='text-xl mt-5'>
-          <span className='text-2xl font-bold'>Job Location: </span>
-          {apidata.location}
-        </h2>
-
-        <h2 className='text-xl mt-5'>
-          <span className='text-2xl font-bold'>Description: </span>
-          {apidata.description}
-        </h2>
-
-        <button className='px-5 py-3 bg-black text-white mt-9'>
-          Apply Now
-        </button>
-      </div>
     </>
   )
 }

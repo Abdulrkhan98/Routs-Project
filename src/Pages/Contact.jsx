@@ -8,7 +8,7 @@ const Contact = () => {
    
   <div>
     <div className='flex justify-center items-center h-100 flex-col '> 
-    <h1 className='text-7xl text-bold'>Contact Page</h1>
+    <h1 className='text-5xl md:text-7xl text-bold'>Contact Page</h1>
     <div className='flex gap-4 mt-5'>
    <button className=' px-4 py-2 bg-gray-200 ' onClick={() => navigate("/contact/info")}>
   Contact info

@@ -17,20 +17,18 @@ const App = () => {
    <>
    <Navbar/>
    <Routes>
-    
     <Route path='/' element={<Home/>}/>   
     <Route path='products' element={<Products/>}/>   
     <Route path='/this' element={<NotFound/>}/>   
     <Route path='about' element={<About/>}/>   
     <Route path='jobsScond' element={<JobsScond/>}/>  
-    <Route path='jobsScond/singlePage/:id' element={<SinglePage/>}/>   
+    <Route path='jobsScond/singlePage/:id' element={<SinglePage/>}/>  
+
    <Route path="contact" element={<Layout />}>
   <Route path="contactForm" element={<ContactForm />} />
   <Route path="info" element={<Info />} />
-</Route>
-
-
- 
+  </Route>
+  <Route path="*" element={<NotFound />} />
    </Routes>
   
    </>

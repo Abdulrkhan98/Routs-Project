@@ -15,7 +15,7 @@ const Products = () => {
    <>
    
   <div className='flex justify-center items-center h-150'> 
-    <h1 className='text-7xl text-bold'>Product Page</h1>
+    <h1 className='text-5xl md:text-7xl text-bold'>Product Page</h1>
    </div>
    </>
   )
